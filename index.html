@@ -96,19 +96,22 @@ nav .brand{border:0;padding:0;display:block}
 .gl .conn{left:160px;width:3px;margin:0;background:#CBD5E1}
 .gl .dash{left:321px;width:60px;border-top:2px dashed var(--navy)}
 .gl .dash.blue{border-top-color:var(--blue)}
+.gl .dash::after{content:"";position:absolute;right:-2px;top:-6px;border-left:9px solid var(--navy);border-top:5px solid transparent;border-bottom:5px solid transparent}
+.gl .dash.blue::after{border-left-color:var(--blue)}
+.gl .dash{width:58px}
 .gl .phase{left:381px;width:774px;box-sizing:border-box;padding:20px 26px 0 22px;border:1.4px solid var(--navy);border-radius:12px}
 .gl .phase.p2{left:382px;width:771px;border-color:var(--blue)}
 .gl .phase:not(.p2){height:161px}
 .gl .phase.p2{height:145px;padding-top:14px}
 .gl .phase .head{grid-template-columns:315px 1fr;gap:0}
-.gl .phase .pill{border-radius:999px;padding:5px 24px;font-size:.88rem;letter-spacing:.14em;background:var(--brand)}
+.gl .phase .pill{border-radius:999px;padding:5px 24px;font-size:.88rem;letter-spacing:.14em;background:var(--mid)}
 .gl .phase.p2 .pill{background:var(--blue)}
 .gl .phase h3{font-size:1.45rem;margin-top:10px}
 .gl .phase .list{margin:0}.gl .phase .list li{margin:1px 0;line-height:1.35}
 .gl .phase .callout{position:absolute;left:22px;right:22px;bottom:12px;margin:0;font-weight:700;padding:8px 14px}
 .gl .phase.p2 .callout{bottom:12px}
-.gl .handoff{left:707px;top:239px;margin:0;font-weight:600;letter-spacing:.06em;gap:26px;font-size:.95rem}
-.gl .handoff img{height:29px}
+.gl .handoff{left:707px;top:237px;line-height:1;margin:0;font-weight:600;letter-spacing:.06em;gap:26px;font-size:.95rem}
+.gl .handoff img{height:22px}
 .gl .gl-hr{left:0;top:263px;width:1172px;border-top:2px dashed #002060}
 
 /* team */
